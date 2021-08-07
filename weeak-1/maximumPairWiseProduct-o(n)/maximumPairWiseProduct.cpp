@@ -2,11 +2,11 @@
 #include <vector>
 
 using namespace std;
-int sumProduct(vector<int>);
+long long sumProduct(vector<long>);
 
 int main(){
 	int n;
-	vector<int> b(n);
+	vector<long> b(n);
 
 	cout << "Enter your array length " << endl;
 	cin>>n;
@@ -18,10 +18,10 @@ int main(){
 	return 0;
 }
 
-int sumProduct(vector<int> b){
+long long sumProduct(vector<long> b){
 	int sizee = b.size();
-	int max1 = -1;
-	int max2 = -1;
+	long max1 = -1;
+	long max2 = -1;
 	for (int i=0; i<sizee;i++){
 		if(b[i] > max1){
 			max1 = b[i];
@@ -34,5 +34,5 @@ int sumProduct(vector<int> b){
 		}
 	}
 	
-	return max1 * max2;
+	return ((long long)max1 * max2);
 }
