@@ -7,6 +7,9 @@ func main(){
 	var number int
 	fmt.Println("Enter number ")
 	fmt.Scan(&number)
+	if number < 1{
+		panic("Number should be positive")
+	}
 	fmt.Println(factorial(number))
 }
 
